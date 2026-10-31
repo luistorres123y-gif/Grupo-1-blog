@@ -3,31 +3,36 @@
     margin: 0;
     box-sizing: border-box;
     }
-    
-:root {
-  /* Fondos */
-  --bg-base: #0f1424;        /* fondo general de la página (azul noche) */
-  --bg-surface: #171b22;     /* cards de posts, sidebar */
-  --bg-elevated: #1e2430;    /* modales, hover de cards, dropdowns */
-  --bg-input: #2b3a45;       /* buscador, inputs (gris azulado) */
 
-  /* Bordes */
+:root {
+  /* Backgrounds */
+  --bg-base: #0f1424;        /* main page background (night blue) */
+  --bg-surface: #171b22;     /* post cards, sidebar */
+  --bg-elevated: #1e2430;    /* modals, card hover, dropdowns */
+  --bg-input: #2b3a45;       /* search bar, inputs (blue-gray) */
+
+  /* Borders */
   --border: #2a2f3a;
   --border-strong: #3a4a55;
 
-  /* Texto */
-  --text-main: #ffffff;      /* títulos y cuerpo */
-  --text-muted: #9aa3b2;     /* fechas, metadata, subtítulos */
-  --text-faint: #6b7385;     /* placeholders, texto deshabilitado */
+  /* Text */
+  --text-main: #ffffff;      /* titles and body text */
+  --text-muted: #9aa3b2;     /* dates, metadata, subtitles */
+  --text-faint: #6b7385;     /* placeholders, disabled text */
 
-  /* Acentos o hover */
-  --primary: #e5322d;        /* botones principales, links activos, CTA */
+  /* Accents and hover */
+  --primary: #e5322d;        /* main buttons, active links, CTA */
   --primary-hover: #c42a26;
-  --secondary: #f5b800;      /* destacados, badges, "post del mes" */
-  --accent-orange: #f59e0b;  /* barras de progreso, gradientes con el rojo */
+  --secondary: #f5b800;      /* highlights, badges, "post of the month" */
+  --accent-orange: #f59e0b;  /* progress bars, gradients with red */
 
-  /* Estados */
-  --success: #22c55e;        /* "publicado", checks, tags positivos */
-  --info: #3a4a55;           /* botones secundarios (como los de comentarios) */
-  --danger: #ef4444;         /* errores, eliminar */
+  /* States */
+  --success: #22c55e;        /* "published", checks, positive tags */
+  --info: #3a4a55;           /* secondary buttons (like the comment buttons) */
+  --danger: #ef4444;         /* errors, delete */
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
 }
