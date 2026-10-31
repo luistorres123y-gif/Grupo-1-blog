@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
     }
+
+:root {
+  /* Fondos */
+  --bg-base: #0f1424;        /* fondo general de la página (azul noche) */
+  --bg-surface: #171b22;     /* cards de posts, sidebar */
+  --bg-elevated: #1e2430;    /* modales, hover de cards, dropdowns */
+  --bg-input: #2b3a45;       /* buscador, inputs (gris azulado) */
+
+  /* Bordes */
+  --border: #2a2f3a;
+  --border-strong: #3a4a55;
+
+  /* Texto */
+  --text-main: #ffffff;      /* títulos y cuerpo */
+  --text-muted: #9aa3b2;     /* fechas, metadata, subtítulos */
+  --text-faint: #6b7385;     /* placeholders, texto deshabilitado */
+
+  /* Acentos o hover */
+  --primary: #e5322d;        /* botones principales, links activos, CTA */
+  --primary-hover: #c42a26;
+  --secondary: #f5b800;      /* destacados, badges, "post del mes" */
+  --accent-orange: #f59e0b;  /* barras de progreso, gradientes con el rojo */
+
+  /* Estados */
+  --success: #22c55e;        /* "publicado", checks, tags positivos */
+  --info: #3a4a55;           /* botones secundarios (como los de comentarios) */
+  --danger: #ef4444;         /* errores, eliminar */
+  }
