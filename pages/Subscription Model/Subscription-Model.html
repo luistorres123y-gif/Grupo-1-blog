@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+      <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalTitle">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 overflow-hidden">
+        <div class="modal-header modal-header-brand" data-bs-theme="dark">
+          <h2 class="modal-title fs-5" id="subscriptionModalTitle"><i class="bi bi-envelope-paper-heart me-2" aria-hidden="true"></i>Suscribite a RollingCode Blog</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <form action="404.html" method="get">
+          <div class="modal-body p-4">
+            <p class="text-body-secondary">Recibí en tu correo cada nueva guía de programación y las novedades del ecosistema RollingCode. Sin spam, prometido.</p>
+            <div class="mb-3">
+              <label for="subscriptionName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="subscriptionName" name="name" placeholder="Tu nombre" autocomplete="name" minlength="2" required>
+              <div class="invalid-feedback">Ingresá tu nombre (mínimo 2 caracteres).</div>
+            </div>
+            <div class="mb-3">
+              <label for="subscriptionEmail" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="subscriptionEmail" name="email" placeholder="nombre@correo.com" autocomplete="email" required>
+              <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+            </div>
+          </div>
+          <div class="modal-footer border-0 px-4 pb-4 pt-0">
+            <button type="button" class="btn btn-outline-theme" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary"><i class="bi bi-send me-1" aria-hidden="true"></i>Suscribirme</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
