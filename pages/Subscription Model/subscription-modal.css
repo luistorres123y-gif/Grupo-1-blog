@@ -1,0 +1,16 @@
+/* --- Modal surface --- */
+.modal-content {
+  --bs-modal-bg: var(--color-surface);
+  --bs-modal-color: var(--color-text-primary);
+  --bs-modal-border-color: var(--color-border);
+}
+.modal-backdrop {
+  --bs-backdrop-bg: var(--color-background);
+  --bs-backdrop-opacity: .75;
+}
+/* --- Brand header --- */
+.modal-header-brand {
+  border-bottom: 0;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+}
