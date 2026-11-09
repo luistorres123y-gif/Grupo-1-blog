@@ -37,4 +37,30 @@
     height: 120px;
   }
 }
+* --- Directors and leaders --- */
+.staff-card {
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.staff-card:hover {
+  border-color: var(--color-primary);
+}
+/* Square photo so the Rolling logo behind each person stays visible */
+.staff-photo-wrap {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+.staff-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+.staff-card:hover .staff-photo {
+  transform: scale(1.04);
+}
+.directors-intro {
+  max-width: 460px;
+}
 
