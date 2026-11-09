@@ -1,0 +1,27 @@
+/* --- Widget titles --- */
+.widget-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.widget-title .bi {
+  color: var(--color-primary);
+}
+/* --- Categories --- */
+.category-list {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-color: var(--color-text-primary);
+  --bs-list-group-border-width: 0;
+  --bs-list-group-action-color: var(--color-text-primary);
+  --bs-list-group-action-hover-color: var(--color-heading);
+  --bs-list-group-action-hover-bg: var(--color-surface-2);
+  --bs-list-group-action-active-color: var(--color-heading);
+  --bs-list-group-action-active-bg: var(--color-surface-2);
+  --bs-list-group-active-color: var(--color-white);
+  --bs-list-group-active-bg: var(--color-primary);
+  --bs-list-group-active-border-color: var(--color-primary);
+  gap: .25rem;
+}
