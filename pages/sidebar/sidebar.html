@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+     <aside class="col-12 col-md-4" aria-label="Barra lateral">
+          <div class="d-flex flex-column gap-4">
+            <!-- Search -->
+            <section class="card-soft p-4">
+              <h2 class="widget-title"><i class="bi bi-search" aria-hidden="true"></i>Buscar artículos</h2>
+              <form action="404.html" method="get" role="search">
+                <div class="input-group">
+                  <input type="search" class="form-control" name="q" placeholder="Ej: git, html, api…" aria-label="Buscar artículos">
+                  <button class="btn btn-primary" type="submit" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></button>
+                </div>
+                <p class="form-text mb-0">Buscá por tecnología, tema o herramienta.</p>
+              </form>
+            </section>
+             <!-- Categories -->
+            <section class="card-soft p-4">
+              <h2 class="widget-title"><i class="bi bi-tags" aria-hidden="true"></i>Categorías</h2>
+              <div class="list-group category-list">
+                <a href="index.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active" aria-current="page">Todas <span class="badge rounded-pill">7</span></a>
+                <a href="categoria-primeros-pasos.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Primeros pasos <span class="badge rounded-pill">2</span></a>
+                <a href="categoria-front-end.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Front-end <span class="badge rounded-pill">2</span></a>
+                <a href="categoria-back-end.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Back-end <span class="badge rounded-pill">1</span></a>
+                <a href="categoria-herramientas.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Herramientas <span class="badge rounded-pill">1</span></a>
+                <a href="categoria-eventos.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Eventos <span class="badge rounded-pill">1</span></a>
+              </div>
+            </section>
+            <!-- Advertising -->
+            <section class="ad-widget d-none d-md-block" aria-label="Publicidad">
+              <span class="ad-label">Publicidad</span>
+              <img src="assets/img/sidebar/sidebar-school.jpg" alt="Estudiantes programando en sus notebooks en un aula de Rolling Code School" width="1000" height="558" loading="lazy">
+              <div class="p-4 text-center">
+                <h2 class="h4 mb-2">RollingCode School</h2>
+                <p class="mb-3 small">Aprendé programación desde cero y sumate a los más de 6.200 egresados.</p>
+                <a href="https://rollingcode.co" target="_blank" rel="noopener" class="btn btn-light w-100">Visitar rollingcode.co<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+              </div>
+            </section>
+          </div>
+        </aside>
+
+    
+</body>
+</html>
