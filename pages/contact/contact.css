@@ -1,0 +1,11 @@
+.contact-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: .9rem;
+  background-color: var(--color-chip);
+  color: var(--color-primary);
+  font-size: 1.35rem;
+}
