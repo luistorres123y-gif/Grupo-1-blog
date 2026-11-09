@@ -1,0 +1,8 @@
+.home-layout {
+  background-color: var(--color-background);
+}
+
+.home-layout-main,
+.home-layout-sidebar {
+  min-width: 0;
+}
