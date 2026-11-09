@@ -429,3 +429,4 @@ To ensure these rules are applied consistently, it is recommended to:
 ---
 
 **Fundamental rule:** every change must have an identifiable purpose, an associated ticket, a dedicated branch, descriptive commit messages in English, and a Pull Request that can be reviewed before it is merged.
+      
