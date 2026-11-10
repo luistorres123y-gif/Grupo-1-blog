@@ -1,0 +1,64 @@
+/* ==========================================================================
+   COMPONENT: POSTS
+   ========================================================================== */
+.post-card {
+  overflow: hidden;
+}
+
+.post-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.post-card-img.img-focus-left {
+  object-position: left center;
+}
+
+/* --- Category badge --- */
+.post-card-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+/* --- Vertical flyer (events): show it whole, never cropped --- */
+.post-card-media-poster {
+  background-color: var(--color-background);
+}
+
+.post-card-img.post-card-img-poster {
+  aspect-ratio: 535 / 672;
+  object-fit: contain;
+}
+
+/* --- Horizontal card on desktop --- */
+@media (min-width: 992px) {
+  .post-card .img-zoom {
+    height: 100%;
+    min-height: 260px;
+  }
+
+  .post-card-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+/* --- Date and title --- */
+.post-meta {
+  color: var(--color-text-secondary);
+}
+
+.post-card .card-title a {
+  color: var(--color-heading);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.post-card .card-title a:hover {
+  color: var(--color-primary-text);
+}
