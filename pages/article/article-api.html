@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Article -->
+    <article class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <nav>
+            <ol class="breadcrumb small">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item">
+                <a href="categoria-back-end.html">Back-end</a>
+              </li>
+              <li class="breadcrumb-item active">¿Qué es una API?</li>
+            </ol>
+          </nav>
+          <header class="mb-4">
+            <a
+              href="categoria-back-end.html"
+              class="badge badge-bronze text-decoration-none mb-3"
+              >Back-end</a
+            >
+            <h1 class="article-title mb-3">
+              ¿Qué es una API? Cómo viaja un pedido en la web
+            </h1>
+            <p class="lead text-body-secondary">
+              Cliente, servidor y base de datos: entendé qué pasa desde que
+              hacés clic hasta que aparece la información en pantalla.
+            </p>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <div class="me-auto">
+                <p class="mb-0 small text-body-secondary">
+                  <i class="bi bi-calendar3 me-1"></i
+                  ><time datetime="2026-10-07">7 de octubre de 2026</time>
+                  <span class="mx-2">·</span><i class="bi bi-clock me-1"></i>6
+                  min de lectura
+                </p>
+              </div>
+              <span class="small text-body-secondary"
+                ><i class="bi bi-folder2-open me-1"></i>Categoría:
+                <strong>Back-end</strong></span
+              >
+            </div>
+          </header>
+          <figure class="article-cover mb-5">
+            <img
+              src="assets/img/posts/post-api.jpg"
+              alt="Flujo de un pedido: notebook, API, servidor en la nube, bases de datos y panel con resultados"
+              width="1600"
+              height="841"
+            />
+            <figcaption>
+              Detrás de cada clic hay un pedido que viaja entre el cliente, el
+              servidor y la base de datos.
+            </figcaption>
+          </figure>
+          <div class="article-content">
+            <p>
+              Cada vez que abrís una aplicación para ver el clima, pedir comida
+              o revisar tus mensajes, hay un intercambio de información que no
+              se ve.
+              <strong
+                >Una API es el intermediario que permite que dos programas se
+                comuniquen</strong
+              >: uno pide datos y el otro se los entrega con un formato
+              acordado.
+            </p>
+            <p>
+              Pensalo como un restaurante: vos sos el cliente, la cocina es el
+              servidor y el mozo es la API. Vos no entrás a la cocina; le hacés
+              el pedido al mozo y él te trae el plato.
+            </p>
+            <h2>1. Los tres protagonistas</h2>
+            <ul>
+              <li>
+                <strong>Cliente:</strong> la página web o la aplicación que usa
+                la persona. Es la que hace el pedido.
+              </li>
+              <li>
+                <strong>Servidor (API):</strong> recibe el pedido, lo procesa y
+                decide qué responder.
+              </li>
+              <li>
+                <strong>Base de datos:</strong> donde se guarda la información,
+                como usuarios, productos o publicaciones.
+              </li>
+            </ul>
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-06.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro de una nube con la palabra API conectada a una red de nodos y el símbolo de llaves"
+                width="1492"
+                height="1054"
+                loading="lazy"
+              />
+              <figcaption>
+                La API conecta a quien pide la información con el lugar donde
+                está guardada.
+              </figcaption>
+            </figure>
+            <h2>2. El viaje de un pedido, paso a paso</h2>
+            <ol>
+              <li>Hacés clic en "Ver publicaciones".</li>
+              <li>
+                El navegador envía un pedido a una dirección de la API, por
+                ejemplo <code>/api/publicaciones</code>.
+              </li>
+              <li>La API busca las publicaciones en la base de datos.</li>
+              <li>La base de datos devuelve los resultados.</li>
+              <li>
+                La API responde al navegador con los datos en formato JSON.
+              </li>
+              <li>La página muestra las publicaciones en pantalla.</li>
+            </ol>
+            <p>
+              Todo esto pasa en milisegundos, muchas veces por cada página que
+              visitás.
+            </p>
+            <h2>3. Los métodos HTTP</h2>
+            <p>
+              Cada pedido indica qué querés hacer con un método. Estos son los
+              cuatro más usados:
+            </p>
+            <div class="table-responsive mb-4">
+              <table class="table table-striped align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">Método</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Ejemplo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>GET</code></td>
+                    <td>Leer información</td>
+                    <td>Ver la lista de publicaciones</td>
+                  </tr>
+                  <tr>
+                    <td><code>POST</code></td>
+                    <td>Crear algo nuevo</td>
+                    <td>Publicar un comentario</td>
+                  </tr>
+                  <tr>
+                    <td><code>PUT</code></td>
+                    <td>Modificar algo existente</td>
+                    <td>Editar tu perfil</td>
+                  </tr>
+                  <tr>
+                    <td><code>DELETE</code></td>
+                    <td>Eliminar</td>
+                    <td>Borrar una publicación</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h2>4. JSON: el idioma de las APIs</h2>
+            <p>
+              La mayoría de las APIs responden en JSON, un formato de texto que
+              se lee casi como una lista de datos:
+            </p>
+            <pre class="bg-body-tertiary border rounded-3 p-3"><code>{
+  "id": 4,
+  "titulo": "Git y GitHub sin miedo",
+  "categoria": "Herramientas",
+  "fecha": "2026-10-14"
+}</code></pre>
+            <div class="tip-box my-4">
+              <i class="bi bi-lightbulb"></i>
+              <div>
+                <p class="fw-semibold mb-1">Consejo de RollingCode Blog</p>
+                <p class="mb-0">
+                  No necesitás saber back-end para empezar. Leer la
+                  documentación de una API pública es un gran ejercicio para
+                  entender cómo están organizados los datos.
+                </p>
+              </div>
+            </div>
+            <h2>5. Los códigos de respuesta</h2>
+            <p>
+              Junto con los datos, el servidor devuelve un número que indica
+              cómo salió todo:
+            </p>
+            <ul>
+              <li><strong>200:</strong> todo salió bien.</li>
+              <li><strong>201:</strong> se creó algo nuevo.</li>
+              <li>
+                <strong>404:</strong> no se encontró lo que pediste. Es el mismo
+                error de la página "Houston, tenemos un problema".
+              </li>
+              <li><strong>500:</strong> hubo un error en el servidor.</li>
+            </ul>
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-05.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro de una base de datos conectada a una tabla, consultas SQL, código y la nube"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <figcaption>
+                La base de datos es el destino final de casi todos los pedidos.
+              </figcaption>
+            </figure>
+            <h2>Para seguir aprendiendo</h2>
+            <p>
+              Cuando llegues a la etapa de back-end vas a crear tus propias
+              APIs. Mientras tanto, herramientas como Postman o Thunder Client
+              te permiten enviar pedidos a APIs públicas y ver las respuestas
+              sin escribir una sola línea de código.
+            </p>
+          </div>
+          <!-- Tags -->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 border-top border-bottom py-4 my-5"
+          >
+            <div class="article-tags d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill px-3 py-2">#API</span>
+              <span class="badge rounded-pill px-3 py-2">#BackEnd</span>
+              <span class="badge rounded-pill px-3 py-2">#JSON</span>
+              <span class="badge rounded-pill px-3 py-2">#HTTP</span>
+            </div>
+            <div class="share-links d-flex align-items-center gap-2">
+              <span class="small text-body-secondary me-1">Compartir:</span>
+              <a
+                href="https://www.facebook.com/RollingCodeSchool/"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/intent/post?text=%C2%BFQu%C3%A9%20es%20una%20API%3F%20C%C3%B3mo%20viaja%20un%20pedido%20en%20la%20web%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://wa.me/?text=%C2%BFQu%C3%A9%20es%20una%20API%3F%20C%C3%B3mo%20viaja%20un%20pedido%20en%20la%20web%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Comments -->
+    <section class="bg-surface py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h2 class="section-title mb-4">Comentarios</h2>
+            <form class="card-soft p-4 p-md-5" action="404.html" method="get">
+              <h3 class="h5 mb-1">Dejá tu comentario</h3>
+              <p class="small text-body-secondary mb-4">
+                Tu correo no se publicará. Los campos marcados con * son
+                obligatorios.
+              </p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="commentName" class="form-label">Nombre *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="commentName"
+                    name="name"
+                    autocomplete="name"
+                    minlength="2"
+                    required
+                  />
+                  <div class="invalid-feedback">Ingresá tu nombre.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="commentEmail" class="form-label"
+                    >Correo electrónico *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="commentEmail"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Ingresá un correo electrónico válido.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="commentText" class="form-label"
+                    >Comentario *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="commentText"
+                    name="comment"
+                    rows="4"
+                    minlength="10"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Escribí un comentario de al menos 10 caracteres.
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-chat-dots me-1"></i>Publicar comentario
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Related articles -->
+    <section class="container py-5">
+      <h2 class="section-title mb-4">También te puede interesar</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-git.jpg"
+                class="card-img-top"
+                alt="Logo de Git conectado a un gráfico de ramas con commits"
+                width="987"
+                height="617"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Herramientas</p>
+              <h3 class="h5">
+                <a
+                  href="post-git-github.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >Git y GitHub sin miedo: los comandos del día a día</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-html.jpg"
+                class="card-img-top"
+                alt="Código HTML con las etiquetas doctype, html, head, meta, body, header y nav"
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Front-end</p>
+              <h3 class="h5">
+                <a
+                  href="post-semantic-html.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >HTML semántico: las etiquetas que todo sitio necesita</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-bootstrap.jpg"
+                class="card-img-top"
+                alt="Logo de Bootstrap rodeado de componentes como botones, modales, formularios y alertas"
+                width="1253"
+                height="705"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Front-end</p>
+              <h3 class="h5">
+                <a
+                  href="post-bootstrap-grid.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >Bootstrap 5: entender la grilla en 10 minutos</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

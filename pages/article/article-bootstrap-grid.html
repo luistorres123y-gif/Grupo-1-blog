@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="article.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Article -->
+    <article class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <nav>
+            <ol class="breadcrumb small">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item">
+                <a href="categoria-front-end.html">Front-end</a>
+              </li>
+              <li class="breadcrumb-item active">Bootstrap 5: la grilla</li>
+            </ol>
+          </nav>
+          <header class="mb-4">
+            <a
+              href="categoria-front-end.html"
+              class="badge badge-gold text-decoration-none mb-3"
+              >Front-end</a
+            >
+            <h1 id="articleTitle" class="article-title mb-3">
+              Bootstrap 5: entender la grilla en 10 minutos
+            </h1>
+            <p class="lead text-body-secondary">
+              Filas, columnas y breakpoints explicados con ejemplos para que tu
+              sitio se vea bien en celulares, tablets y computadoras.
+            </p>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <div class="me-auto">
+                <p class="mb-0 small text-body-secondary">
+                  <i class="bi bi-calendar3 me-1"></i
+                  ><time datetime="2026-10-21">21 de octubre de 2026</time>
+                  <span class="mx-2">·</span><i class="bi bi-clock me-1"></i>7
+                  min de lectura
+                </p>
+              </div>
+              <span class="small text-body-secondary"
+                ><i class="bi bi-folder2-open me-1"></i>Categoría:
+                <strong>Front-end</strong></span
+              >
+            </div>
+          </header>
+          <figure class="article-cover mb-5">
+            <img
+              src="assets/img/posts/post-bootstrap.jpg"
+              alt="Logo de Bootstrap rodeado de componentes como botones, modales, formularios y alertas"
+              width="1253"
+              height="705"
+            />
+            <figcaption>
+              Bootstrap ofrece una grilla de 12 columnas y componentes listos
+              para usar.
+            </figcaption>
+          </figure>
+          <div class="article-content">
+            <p>
+              Lograr que una página se vea bien en una computadora, en una
+              tablet y en un celular puede parecer complicado.
+              <strong
+                >La grilla de Bootstrap resuelve la mayor parte del
+                trabajo</strong
+              >
+              con un puñado de clases. En esta guía te la explicamos paso a paso
+              para que la entiendas en diez minutos.
+            </p>
+
+            <h2>1. Contenedor, fila y columnas</h2>
+            <p>
+              Toda grilla de Bootstrap se arma con tres piezas que siempre van
+              en el mismo orden:
+            </p>
+            <ul>
+              <li>
+                <strong><code>.container</code>:</strong> centra el contenido y
+                le da márgenes a los costados.
+              </li>
+              <li>
+                <strong><code>.row</code>:</strong> una fila que agrupa
+                columnas.
+              </li>
+              <li>
+                <strong><code>.col</code>:</strong> cada columna dentro de la
+                fila.
+              </li>
+            </ul>
+            <pre
+              class="bg-body-tertiary border rounded-3 p-3"
+            ><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col"&gt;Columna 1&lt;/div&gt;
+    &lt;div class="col"&gt;Columna 2&lt;/div&gt;
+    &lt;div class="col"&gt;Columna 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h2>2. La regla de las 12 columnas</h2>
+            <p>
+              Cada fila tiene 12 columnas imaginarias. Con un número le decís a
+              cada columna cuántas de esas 12 ocupa: <code>col-6</code> es la
+              mitad, <code>col-4</code> es un tercio y <code>col-12</code> ocupa
+              todo el ancho. Si la suma pasa de 12, la columna que sobra baja a
+              la línea siguiente.
+            </p>
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-11.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro del logo de Bootstrap con una grilla de columnas adaptada a computadora, tablet y celular"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <figcaption>
+                Doce columnas que se combinan para armar cualquier diseño.
+              </figcaption>
+            </figure>
+            <h2>3. Los breakpoints</h2>
+            <p>
+              Los breakpoints son los anchos de pantalla en los que el diseño
+              puede cambiar. Bootstrap 5 trae seis:
+            </p>
+            <div class="table-responsive mb-4">
+              <table class="table table-striped align-middle">
+                <thead>
+                  <tr>
+                    <th>Breakpoint</th>
+                    <th>Sufijo</th>
+                    <th>Desde</th>
+                    <th>Dispositivo típico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Extra chico</td>
+                    <td><em>sin sufijo</em></td>
+                    <td>0 px</td>
+                    <td>Celulares</td>
+                  </tr>
+                  <tr>
+                    <td>Chico</td>
+                    <td><code>sm</code></td>
+                    <td>576 px</td>
+                    <td>Celulares grandes</td>
+                  </tr>
+                  <tr>
+                    <td>Mediano</td>
+                    <td><code>md</code></td>
+                    <td>768 px</td>
+                    <td>Tablets</td>
+                  </tr>
+                  <tr>
+                    <td>Grande</td>
+                    <td><code>lg</code></td>
+                    <td>992 px</td>
+                    <td>Notebooks</td>
+                  </tr>
+                  <tr>
+                    <td>Extra grande</td>
+                    <td><code>xl</code></td>
+                    <td>1200 px</td>
+                    <td>Computadoras</td>
+                  </tr>
+                  <tr>
+                    <td>Extra extra grande</td>
+                    <td><code>xxl</code></td>
+                    <td>1400 px</td>
+                    <td>Pantallas grandes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h2>4. Columnas que cambian según la pantalla</h2>
+            <p>
+              Acá está la magia: podés combinar varias clases en una misma
+              columna. Bootstrap aplica cada una desde su breakpoint en
+              adelante.
+            </p>
+            <pre
+              class="bg-body-tertiary border rounded-3 p-3"
+            ><code>&lt;div class="col-12 col-md-6 col-lg-4"&gt;...&lt;/div&gt;</code></pre>
+            <p>
+              Esa columna ocupa todo el ancho en celulares, la mitad en tablets
+              y un tercio en computadoras. Con tres tarjetas así, en el celular
+              se ven una debajo de la otra y en la computadora quedan las tres
+              en fila.
+            </p>
+
+            <div class="tip-box my-4">
+              <i class="bi bi-lightbulb"></i>
+              <div>
+                <p class="fw-semibold mb-1">Consejo de RollingCode Blog</p>
+                <p class="mb-0">
+                  Pensá primero en el celular. Bootstrap es "mobile first": las
+                  clases sin sufijo valen para todas las pantallas, y las demás
+                  van agregando cambios a medida que la pantalla crece.
+                </p>
+              </div>
+            </div>
+            <h2>5. Espacio entre columnas</h2>
+            <p>
+              Para separar las columnas se usan los <em>gutters</em>, con las
+              clases <code>g-0</code> a <code>g-5</code> en la fila. Si querés
+              controlar solo el espacio horizontal o el vertical, usá
+              <code>gx-*</code> o <code>gy-*</code>.
+            </p>
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-04.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro de un mismo sitio web adaptado a una computadora, una tablet y un celular"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <figcaption>
+                Con la grilla, el mismo contenido se reorganiza solo según el
+                tamaño de la pantalla.
+              </figcaption>
+            </figure>
+            <h2>Un ejemplo real: este blog</h2>
+            <ul>
+              <li>
+                <strong>Inicio:</strong> las publicaciones usan
+                <code>col-12 col-md-8</code> y la barra lateral
+                <code>col-12 col-md-4</code>. En el celular la barra baja y
+                queda debajo de las publicaciones.
+              </li>
+              <li>
+                <strong>Galería:</strong> cada imagen usa
+                <code>col-12 col-md-4 col-lg-3</code>: una por fila en
+                celulares, tres en tablets y cuatro en computadoras.
+              </li>
+              <li>
+                <strong>Publicidad:</strong> con
+                <code>d-none d-md-block</code> desaparece en celulares y vuelve
+                a aparecer desde tablets.
+              </li>
+            </ul>
+            <p>
+              Con estas pocas clases ya podés armar diseños responsive de
+              verdad. Abrí la documentación oficial de Bootstrap, probá
+              combinaciones y achicá la ventana del navegador para ver cómo se
+              acomoda todo.
+            </p>
+          </div>
+          <!-- Tags -->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 border-top border-bottom py-4 my-5"
+          >
+            <div class="article-tags d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill px-3 py-2">#Bootstrap</span>
+              <span class="badge rounded-pill px-3 py-2">#Responsive</span>
+              <span class="badge rounded-pill px-3 py-2">#CSS</span>
+              <span class="badge rounded-pill px-3 py-2">#Grilla</span>
+            </div>
+            <div class="share-links d-flex align-items-center gap-2">
+              <span class="small text-body-secondary me-1">Compartir:</span>
+              <a
+                href="https://www.facebook.com/RollingCodeSchool/"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/intent/post?text=Bootstrap%205%3A%20entender%20la%20grilla%20en%2010%20minutos%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://wa.me/?text=Bootstrap%205%3A%20entender%20la%20grilla%20en%2010%20minutos%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Comments -->
+    <section class="bg-surface py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h2 id="commentsTitle" class="section-title mb-4">Comentarios</h2>
+            <form class="card-soft p-4 p-md-5" action="404.html" method="get">
+              <h3 class="h5 mb-1">Dejá tu comentario</h3>
+              <p class="small text-body-secondary mb-4">
+                Tu correo no se publicará. Los campos marcados con * son
+                obligatorios.
+              </p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="commentName" class="form-label">Nombre *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="commentName"
+                    name="name"
+                    autocomplete="name"
+                    minlength="2"
+                    required
+                  />
+                  <div class="invalid-feedback">Ingresá tu nombre.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="commentEmail" class="form-label"
+                    >Correo electrónico *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="commentEmail"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Ingresá un correo electrónico válido.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="commentText" class="form-label"
+                    >Comentario *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="commentText"
+                    name="comment"
+                    rows="4"
+                    minlength="10"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Escribí un comentario de al menos 10 caracteres.
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-chat-dots me-1"></i>Publicar comentario
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Related articles -->
+    <section class="container py-5">
+      <h2 id="relatedTitle" class="section-title mb-4">
+        También te puede interesar
+      </h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-html.jpg"
+                class="card-img-top"
+                alt="Código HTML con las etiquetas doctype, html, head, meta, body, header y nav"
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Front-end</p>
+              <h3 class="h5">
+                <a
+                  href="post-semantic-html.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >HTML semántico: las etiquetas que todo sitio necesita</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-getting-started.jpg"
+                class="card-img-top"
+                alt="Estudiante pensativa frente a su notebook con código, de noche en su escritorio"
+                width="1358"
+                height="758"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Primeros pasos</p>
+              <h3 class="h5">
+                <a
+                  href="post-getting-started.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >¿Por dónde empezar a programar? Guía para tus primeros
+                  pasos</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-portfolio.jpg"
+                class="card-img-top"
+                alt="Notebook mostrando un portfolio web de developer en un escritorio con luz violeta"
+                width="1400"
+                height="875"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Primeros pasos</p>
+              <h3 class="h5">
+                <a
+                  href="post-portfolio.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >Tu primer portfolio de developer: qué mostrar y cómo</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
