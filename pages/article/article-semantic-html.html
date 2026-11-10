@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="article.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Artículo -->
+    <article class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <nav>
+            <ol class="breadcrumb small">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item">
+                <a href="categoria-front-end.html">Front-end</a>
+              </li>
+              <li class="breadcrumb-item active">HTML semántico</li>
+            </ol>
+          </nav>
+
+          <header class="mb-4">
+            <a
+              href="categoria-front-end.html"
+              class="badge badge-gold text-decoration-none mb-3"
+              >Front-end</a
+            >
+            <h1 class="article-title mb-3">
+              HTML semántico: las etiquetas que todo sitio necesita
+            </h1>
+            <p class="lead text-body-secondary">
+              header, nav, main, article, aside y footer: para qué sirve cada
+              una y por qué mejoran la accesibilidad y el SEO.
+            </p>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <div class="me-auto">
+                <p class="mb-0 small text-body-secondary">
+                  <i class="bi bi-calendar3 me-1"></i
+                  ><time datetime="2026-10-28">28 de octubre de 2026</time>
+                  <span class="mx-2">·</span><i class="bi bi-clock me-1"></i>6
+                  min de lectura
+                </p>
+              </div>
+              <span class="small text-body-secondary"
+                ><i class="bi bi-folder2-open me-1"></i>Categoría:
+                <strong>Front-end</strong></span
+              >
+            </div>
+          </header>
+
+          <figure class="article-cover mb-5">
+            <img
+              src="assets/img/posts/post-html.jpg"
+              alt="Código HTML con las etiquetas doctype, html, head, meta, body, header y nav"
+              width="1600"
+              height="1000"
+            />
+            <figcaption>
+              Las etiquetas semánticas le dan sentido a cada parte de la página.
+            </figcaption>
+          </figure>
+
+          <div class="article-content">
+            <p>
+              Cuando empezamos a escribir HTML es muy común resolver todo con
+              <code>&lt;div&gt;</code>. La página se ve bien, pero para el
+              navegador, los buscadores y los lectores de pantalla es solo una
+              caja dentro de otra caja.
+              <strong
+                >El HTML semántico usa etiquetas que describen qué es cada parte
+                de la página</strong
+              >, y eso cambia todo.
+            </p>
+            <p>
+              En esta guía repasamos las etiquetas que todo sitio necesita, para
+              qué sirve cada una y por qué conviene usarlas desde el primer
+              proyecto.
+            </p>
+
+            <h2>1. ¿Qué significa "semántico"?</h2>
+            <p>
+              Semántico quiere decir "con significado". Un
+              <code>&lt;div&gt;</code> no dice nada sobre su contenido; un
+              <code>&lt;nav&gt;</code>, en cambio, avisa que adentro hay un menú
+              de navegación. El resultado visual puede ser el mismo, pero el
+              código se vuelve más fácil de leer para las personas y para las
+              máquinas.
+            </p>
+
+            <h2>2. Las etiquetas principales</h2>
+            <div class="table-responsive mb-4">
+              <table class="table table-striped align-middle">
+                <thead>
+                  <tr>
+                    <th>Etiqueta</th>
+                    <th>Para qué sirve</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>&lt;header&gt;</code></td>
+                    <td>
+                      Encabezado de la página o de una sección: logo, título,
+                      menú.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;nav&gt;</code></td>
+                    <td>Grupo de enlaces de navegación principal.</td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;main&gt;</code></td>
+                    <td>Contenido principal. Hay uno solo por página.</td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;article&gt;</code></td>
+                    <td>
+                      Contenido que tiene sentido por sí solo: una publicación,
+                      una noticia.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;section&gt;</code></td>
+                    <td>
+                      Bloque temático dentro de la página, normalmente con su
+                      propio título.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;aside&gt;</code></td>
+                    <td>
+                      Contenido complementario: barra lateral, publicidad, datos
+                      extra.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;footer&gt;</code></td>
+                    <td>
+                      Pie de la página o de una sección: contacto, redes,
+                      derechos.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Así se ve una página bien estructurada</h3>
+            <p>
+              Este es el esqueleto que usamos en todas las páginas de este blog:
+            </p>
+            <pre
+              class="bg-body-tertiary border rounded-3 p-3"
+            ><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h1&gt;Título de la publicación&lt;/h1&gt;
+      &lt;section&gt;...&lt;/section&gt;
+    &lt;/article&gt;
+    &lt;aside&gt;...&lt;/aside&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+
+            <div class="tip-box my-4">
+              <i class="bi bi-lightbulb"></i>
+              <div>
+                <p class="fw-semibold mb-1">Consejo de RollingCode Blog</p>
+                <p class="mb-0">
+                  Antes de escribir código, dibujá la página en un papel y marcá
+                  cuál es el header, el main, el aside y el footer. Después
+                  traducirlo a HTML es inmediato.
+                </p>
+              </div>
+            </div>
+
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-01.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro de un editor de código, una notebook con el símbolo de código y un lápiz"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <figcaption>
+                Un código ordenado es más fácil de mantener, para vos y para tu
+                equipo.
+              </figcaption>
+            </figure>
+
+            <h2>3. Mejor accesibilidad</h2>
+            <p>
+              Las personas que usan lectores de pantalla navegan saltando entre
+              las regiones de la página. Gracias a las etiquetas semánticas
+              pueden ir directo al menú, al contenido principal o al pie sin
+              escuchar todo el sitio de principio a fin.
+            </p>
+            <ul>
+              <li>
+                <strong>Títulos en orden:</strong> un solo
+                <code>&lt;h1&gt;</code> por página y después
+                <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, sin saltear
+                niveles.
+              </li>
+              <li>
+                <strong>Imágenes con <code>alt</code>:</strong> un texto que
+                describa la imagen para quien no puede verla.
+              </li>
+              <li>
+                <strong>Formularios con <code>&lt;label&gt;</code>:</strong>
+                cada campo con su etiqueta asociada.
+              </li>
+            </ul>
+
+            <h2>4. Mejor posicionamiento en buscadores</h2>
+            <p>
+              Los buscadores leen el HTML para entender de qué trata cada
+              página. Una estructura clara, con títulos bien jerarquizados y el
+              contenido principal dentro de <code>&lt;main&gt;</code> y
+              <code>&lt;article&gt;</code>, les facilita el trabajo y ayuda a
+              que tu sitio aparezca en los resultados.
+            </p>
+
+            <figure class="my-4">
+              <img
+                src="assets/img/gallery/gallery-04.jpg"
+                class="img-fluid w-100"
+                alt="Ilustración en rojo y negro de un mismo sitio web adaptado a una computadora, una tablet y un celular"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <figcaption>
+                La misma estructura semántica funciona en cualquier pantalla.
+              </figcaption>
+            </figure>
+
+            <h2>Errores comunes</h2>
+            <ul>
+              <li>
+                Usar <code>&lt;div&gt;</code> para todo, aunque exista una
+                etiqueta más precisa.
+              </li>
+              <li>Poner varios <code>&lt;h1&gt;</code> en la misma página.</li>
+              <li>
+                Elegir un título por su tamaño en lugar de por su importancia:
+                para el tamaño está el CSS.
+              </li>
+              <li>Dejar imágenes sin el atributo <code>alt</code>.</li>
+            </ul>
+            <p>
+              Escribir HTML semántico no lleva más tiempo: solo hay que elegir
+              la etiqueta correcta. Empezá en tu próximo proyecto y vas a notar
+              la diferencia apenas vuelvas a leer tu código.
+            </p>
+          </div>
+
+          <!-- Etiquetas y compartir -->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 border-top border-bottom py-4 my-5"
+          >
+            <div class="article-tags d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill px-3 py-2">#HTML</span>
+              <span class="badge rounded-pill px-3 py-2">#Semántica</span>
+              <span class="badge rounded-pill px-3 py-2">#Accesibilidad</span>
+              <span class="badge rounded-pill px-3 py-2">#SEO</span>
+            </div>
+            <div class="share-links d-flex align-items-center gap-2">
+              <span class="small text-body-secondary me-1">Compartir:</span>
+              <a
+                href="https://www.facebook.com/RollingCodeSchool/"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/intent/post?text=HTML%20sem%C3%A1ntico%3A%20las%20etiquetas%20que%20todo%20sitio%20necesita%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://wa.me/?text=HTML%20sem%C3%A1ntico%3A%20las%20etiquetas%20que%20todo%20sitio%20necesita%20%7C%20RollingCode%20Blog"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Comentarios -->
+    <section class="bg-surface py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h2 class="section-title mb-4">Comentarios</h2>
+
+            <form class="card-soft p-4 p-md-5" action="404.html" method="get">
+              <h3 class="h5 mb-1">Dejá tu comentario</h3>
+              <p class="small text-body-secondary mb-4">
+                Tu correo no se publicará. Los campos marcados con * son
+                obligatorios.
+              </p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="commentName" class="form-label">Nombre *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="commentName"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                  <div class="invalid-feedback">Ingresá tu nombre.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="commentEmail" class="form-label"
+                    >Correo electrónico *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="commentEmail"
+                    name="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Ingresá un correo electrónico válido.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="commentText" class="form-label"
+                    >Comentario *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="commentText"
+                    name="comment"
+                    rows="4"
+                    minlength="10"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Escribí un comentario de al menos 10 caracteres.
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-chat-dots me-1"></i>Publicar comentario
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Artículos relacionados -->
+    <section class="container py-5">
+      <h2 class="section-title mb-4">También te puede interesar</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-bootstrap.jpg"
+                class="card-img-top"
+                alt="Logo de Bootstrap rodeado de componentes como botones, modales, formularios y alertas"
+                width="1253"
+                height="705"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Front-end</p>
+              <h3 class="h5">
+                <a
+                  href="post-bootstrap-grid.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >Bootstrap 5: entender la grilla en 10 minutos</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-getting-started.jpg"
+                class="card-img-top"
+                alt="Estudiante pensativa frente a su notebook con código, de noche en su escritorio"
+                width="1358"
+                height="758"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Primeros pasos</p>
+              <h3 class="h5">
+                <a
+                  href="post-getting-started.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >¿Por dónde empezar a programar? Guía para tus primeros
+                  pasos</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom">
+              <img
+                src="assets/img/posts/post-git.jpg"
+                class="card-img-top"
+                alt="Logo de Git conectado a un gráfico de ramas con commits"
+                width="987"
+                height="617"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Herramientas</p>
+              <h3 class="h5">
+                <a
+                  href="post-git-github.html"
+                  class="stretched-link text-reset text-decoration-none"
+                  >Git y GitHub sin miedo: los comandos del día a día</a
+                >
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

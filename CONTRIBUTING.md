@@ -16,7 +16,8 @@ The main rule is that every change must have an identifiable purpose, an associa
 | Git branches | `prefix/TYPE-123-short-description` | English |
 | Commits | Conventional Commits | English |
 | Pull Requests | `[TYPE-123] Short description` | English |
-| Classes | `PascalCase` | English |
+| Programming classes | `PascalCase` | English |
+| CSS/HTML class names | `kebab-case` | English |
 | Methods and variables | `camelCase` | English |
 
 ## 3. Branch Naming
@@ -343,6 +344,27 @@ Small, focused PRs are preferred. If a ticket results in an excessively large PR
 | Parameter | `camelCase` | `accessToken` |
 | Constant | `UPPER_SNAKE_CASE` | `MAX_LOGIN_ATTEMPTS` |
 
+### Naming rules
+
+Use `PascalCase` for programming-language classes, interfaces, entities, and related type declarations. Use `kebab-case` for CSS class names in HTML and CSS selectors. These conventions serve different purposes and must not be confused.
+
+**Examples:**
+
+```html
+<section class="about-us-section">
+  <div class="team-member-card"></div>
+</section>
+```
+
+```css
+.about-us-section { /* styles */ }
+.team-member-card { /* styles */ }
+```
+
+```typescript
+class AboutUsService {}
+```
+
 ### Example
 
 ```typescript
@@ -368,7 +390,7 @@ The way constants and modifiers are declared must be adapted to the language and
 - Avoid generic names such as `Manager`, `Helper`, or `Utils` when a more descriptive alternative is available.
 - Class, method, variable, and file names must be in English.
 - Do not add artificial prefixes such as `CUserService` or `IUserService`, unless required by the language or architecture.
-- Follow framework conventions: for example, classes and interfaces in `PascalCase`, and files in `kebab-case` where applicable.
+- Follow framework conventions: programming classes and interfaces use `PascalCase`; CSS/HTML class names and files use `kebab-case` where applicable.
 
 Examples:
 
@@ -413,7 +435,8 @@ This does not prevent internal communication from being in Spanish. The goal is 
 | Ticket | `TYPE-ID: Short description` | `PROJ-123: Implement user profile` |
 | Commit | `type(scope): imperative description` | `feat(users): add profile endpoint` |
 | Pull Request | `[TICKET-ID] Short description` | `[PROJ-123] Implement user profile` |
-| Class | `PascalCase` | `UserProfileService` |
+| Programming class | `PascalCase` | `UserProfileService` |
+| CSS/HTML class | `kebab-case` | `user-profile`, `main-navbar` |
 | Ticket-branch relationship | One ticket per branch | `feature/PROJ-123-user-profile` |
 
 ## 12. Repository Adoption
@@ -429,4 +452,3 @@ To ensure these rules are applied consistently, it is recommended to:
 ---
 
 **Fundamental rule:** every change must have an identifiable purpose, an associated ticket, a dedicated branch, descriptive commit messages in English, and a Pull Request that can be reviewed before it is merged.
-      
