@@ -1,0 +1,174 @@
+ <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <nav aria-label="Ruta de navegación">
+          <ol class="breadcrumb small mb-3">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Galería</li>
+          </ol>
+        </nav>
+        <h1 class="mb-3">Galería</h1>
+        <p class="lead mb-0">El mundo de la programación en imágenes. Hacé clic en cualquier ilustración para verla ampliada.</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="container py-5" aria-label="Imágenes de la galería">
+      <div class="row g-4">
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal01" aria-label="Ampliar imagen: Editor de código">
+                <img src="assets/img/gallery/gallery-01.jpg" alt="Ilustración en rojo y negro de un editor de código, una notebook con el símbolo de código y un lápiz" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Editor de código</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Front-end</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal02" aria-label="Ampliar imagen: La terminal">
+                <img src="assets/img/gallery/gallery-02.jpg" alt="Ilustración en rojo y negro de una terminal con el símbolo del prompt, engranajes y un servidor" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>La terminal</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Herramientas</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal03" aria-label="Ampliar imagen: Ramas en Git">
+                <img src="assets/img/gallery/gallery-03.jpg" alt="Ilustración en rojo y negro del logo de Git con las ramas main, develop y feature conectadas" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Ramas en Git</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Herramientas</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal04" aria-label="Ampliar imagen: Diseño responsive">
+                <img src="assets/img/gallery/gallery-04.jpg" alt="Ilustración en rojo y negro de un mismo sitio web adaptado a una computadora, una tablet y un celular" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Diseño responsive</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Front-end</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal05" aria-label="Ampliar imagen: Bases de datos">
+                <img src="assets/img/gallery/gallery-05.jpg" alt="Ilustración en rojo y negro de una base de datos conectada a una tabla, consultas SQL, código y la nube" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Bases de datos</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Back-end</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal06" aria-label="Ampliar imagen: APIs">
+                <img src="assets/img/gallery/gallery-06.jpg" alt="Ilustración en rojo y negro de una nube con la palabra API conectada a una red de nodos y el símbolo de llaves" width="1492" height="1054" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>APIs</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Back-end</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal07" aria-label="Ampliar imagen: Charlas">
+                <img src="assets/img/gallery/gallery-07.jpg" alt="Ilustración en rojo y negro de una persona dando una charla desde un atril frente a una pantalla y un público" width="1672" height="941" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Charlas</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Comunidad</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal08" aria-label="Ampliar imagen: Trabajo en equipo">
+                <img src="assets/img/gallery/gallery-08.jpg" alt="Ilustración en rojo y negro de cuatro personas uniendo piezas de un rompecabezas en equipo" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Trabajo en equipo</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Comunidad</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal09" aria-label="Ampliar imagen: Tu portfolio">
+                <img src="assets/img/gallery/gallery-09.jpg" alt="Ilustración en rojo y negro de un portfolio con una notebook llena de proyectos, un perfil, una cámara y un maletín" width="1672" height="941" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Tu portfolio</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Primeros pasos</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal10" aria-label="Ampliar imagen: Testing">
+                <img src="assets/img/gallery/gallery-10.jpg" alt="Ilustración en rojo y negro de testing: lista de pruebas aprobadas, una lupa con un bug, una notebook y un tubo de ensayo" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Testing</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Calidad</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal11" aria-label="Ampliar imagen: Grilla de Bootstrap">
+                <img src="assets/img/gallery/gallery-11.jpg" alt="Ilustración en rojo y negro del logo de Bootstrap con una grilla de columnas adaptada a computadora, tablet y celular" width="1536" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Grilla de Bootstrap</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Front-end</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <figure class="mb-0">
+              <button type="button" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#imageModal12" aria-label="Ampliar imagen: Comunidad">
+                <img src="assets/img/gallery/gallery-12.jpg" alt="Ilustración en rojo y negro de una comunidad de personas conectadas alrededor del mundo con burbujas de conversación" width="1535" height="1024" loading="lazy">
+                <span class="gallery-overlay" aria-hidden="true"><i class="bi bi-arrows-fullscreen"></i></span>
+              </button>
+              <figcaption class="gallery-caption">
+                <h2>Comunidad</h2>
+                <p class="small text-body-secondary mb-0"><i class="bi bi-tag me-1" aria-hidden="true"></i>Comunidad</p>
+              </figcaption>
+            </figure>
+          </div>
+      </div>
+    </section>
