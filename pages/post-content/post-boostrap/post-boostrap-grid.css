@@ -1,0 +1,93 @@
+.article-title {
+  font-size: clamp(2rem, 1.4rem + 2.6vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.article-cover img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+}
+
+/* --- Article content --- */
+.article-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.article-content strong {
+  color: var(--color-heading);
+}
+
+.article-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 1.9rem);
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.article-content figure img {
+  border-radius: var(--border-radius-lg);
+}
+
+.article-content figcaption {
+  display: block;
+  max-width: 480px;
+  height: auto;
+  margin-inline: auto;
+  aspect-ratio: auto;
+}
+
+.article-cover figcaption {
+  margin-top: .5rem;
+  font-size: .875rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+/* --- Tip box --- */
+.tip-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-surface);
+}
+
+.tip-box > .bi {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+/* --- Tags and share links --- */
+.article-tags .badge {
+  background-color: var(--color-chip);
+  color: var(--color-heading);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.share-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-chip);
+  color: var(--color-heading);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.share-links a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
