@@ -1,0 +1,15 @@
+.stats-band {
+  background: var(--color-surface);
+}
+
+.stat-number {
+  font-size: clamp(2.2rem, 1.6rem + 2vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  margin-top: .35rem;
+  color: var(--color-text-secondary);
+}
