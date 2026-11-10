@@ -1,0 +1,10 @@
+.cta-band {
+  border-radius: 1.5rem;
+  background: var(--gradient-primary);
+  color: var(--color-primary-soft);
+}
+
+.cta-band h2 {
+  font-weight: 800;
+  color: var(--color-white);
+}
