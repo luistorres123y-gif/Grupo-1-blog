@@ -1,0 +1,29 @@
+.page-header {
+  padding-block: clamp(3rem, 8vw, 5.5rem);
+  background-image: var(--gradient-primary);
+  color: var(--color-primary-soft);
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: clamp(2.2rem, 1.4rem + 3.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.page-header .lead {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.page-header .breadcrumb {
+  --bs-breadcrumb-divider-color: var(--color-primary-soft);
+  --bs-breadcrumb-item-active-color: var(--color-white);
+  justify-content: center;
+}
+
+.page-header .breadcrumb a {
+  color: var(--color-primary-soft);
+}
