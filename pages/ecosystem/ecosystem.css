@@ -1,0 +1,11 @@
+.eco-card {
+  border-top: 4px solid var(--color-primary);
+}
+
+.eco-tag {
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
