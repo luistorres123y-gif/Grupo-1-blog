@@ -2,7 +2,6 @@
   position: relative;
 }
 
-/* --- Background image --- */
 .hero-carousel .hero-bg {
   height: clamp(340px, 62vh, 640px);
   object-fit: cover;
@@ -12,7 +11,6 @@
   object-position: center 20%;
 }
 
-/* --- Sharp image (desktop) --- */
 .hero-carousel .hero-figure {
   position: absolute;
   top: 50%;
@@ -29,7 +27,6 @@
   transform: translateY(-50%);
 }
 
-/* --- Gradient over the image --- */
 .hero-carousel .carousel-item::after {
   content: "";
   position: absolute;
@@ -37,7 +34,6 @@
   background: linear-gradient(to top, rgb(11 11 12 / .95) 0%, rgb(11 11 12 / .45) 45%, rgb(11 11 12 / 0) 75%);
 }
 
-/* --- Slide text --- */
 .hero-carousel .carousel-caption {
   z-index: 3;
   right: 12%;
@@ -76,7 +72,6 @@
   color: var(--color-text-primary);
 }
 
-/* --- Arrows and indicators --- */
 .hero-carousel .carousel-control-prev,
 .hero-carousel .carousel-control-next {
   z-index: 3;
