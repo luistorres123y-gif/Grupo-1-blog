@@ -28,10 +28,10 @@
       integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pages/navbar/navbar.css" />
-    <link rel="stylesheet" href="pages/sliderbar/sliderbar.css" />
-    <link rel="stylesheet" href="pages/posts/posts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="components/navbar/navbar.css" />
+    <link rel="stylesheet" href="components/hero/hero.css" />
+    <link rel="stylesheet" href="components/posts/posts.css" />
     <link rel="stylesheet" href="components/press/press.css" />
     <link rel="stylesheet" href="components/stats/stats.css" />
     <link rel="stylesheet" href="components/ecosystem/ecosystem.css" />
@@ -1185,26 +1185,14 @@
 
     <!-- COMPONENT: faq-bot · components/faq-bot/faq-bot.html -->
     <details class="faq-bot">
-      <summary
-        class="faq-bot-toggle"
-        aria-label="Abrir o cerrar el chat del bot"
-      >
-        <i
-          class="bi bi-chat-dots-fill faq-bot-icon-open"
-          aria-hidden="true"
-        ></i>
+      <summary class="faq-bot-toggle" aria-label="Abrir o cerrar el chat del bot">
+        <i class="bi bi-chat-dots-fill faq-bot-icon-open" aria-hidden="true"></i>
         <i class="bi bi-x-lg faq-bot-icon-close" aria-hidden="true"></i>
       </summary>
 
-      <div
-        class="faq-bot-panel"
-        role="region"
-        aria-label="Bot de preguntas sobre el workshop"
-      >
+      <div class="faq-bot-panel" role="region" aria-label="Bot de preguntas sobre el workshop">
         <div class="faq-bot-header">
-          <span class="bot-avatar" aria-hidden="true"
-            ><i class="bi bi-robot"></i
-          ></span>
+          <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
           <div>
             <p class="faq-bot-name">Bot de RollingCode</p>
             <p class="faq-bot-status">Preguntas sobre el workshop</p>
@@ -1213,48 +1201,30 @@
 
         <div class="faq-bot-body">
           <div class="bot-row">
-            <span class="bot-avatar" aria-hidden="true"
-              ><i class="bi bi-robot"></i
-            ></span>
-            <p class="bot-msg">
-              ¡Hola! Te cuento todo sobre el workshop "¿Los programadores van a
-              desaparecer?". Elegí una pregunta.
-            </p>
+            <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
+            <p class="bot-msg">¡Hola! Te cuento todo sobre el workshop "¿Los programadores van a desaparecer?". Elegí una pregunta.</p>
           </div>
 
           <details name="workshop-bot">
             <summary>¿De qué se trata el workshop?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
-              <p class="bot-msg">
-                Hablamos de cómo la IA está cambiando el trabajo de los
-                programadores y de qué habilidades siguen siendo clave.
-              </p>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
+              <p class="bot-msg">Hablamos de cómo la IA está cambiando el trabajo de los programadores y de qué habilidades siguen siendo clave.</p>
             </div>
           </details>
 
           <details name="workshop-bot">
             <summary>¿Quiénes son los oradores?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
-              <p class="bot-msg">
-                José Díaz, con "Manual de supervivencia del desarrollador", y
-                Tomás Gómez &amp; Pablo Basso, con "De programar línea por línea
-                a construir con IA".
-              </p>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
+              <p class="bot-msg">José Díaz, con "Manual de supervivencia del desarrollador", y Tomás Gómez &amp; Pablo Basso, con "De programar línea por línea a construir con IA".</p>
             </div>
           </details>
 
           <details name="workshop-bot">
             <summary>¿Cuándo y a qué hora es?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
               <p class="bot-msg">El jueves 17 de septiembre a las 18 hs.</p>
             </div>
           </details>
@@ -1262,22 +1232,15 @@
           <details name="workshop-bot">
             <summary>¿Dónde se hace?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
-              <p class="bot-msg">
-                En Gral. Paz 576, entrepiso. También lo podés seguir de forma
-                virtual.
-              </p>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
+              <p class="bot-msg">En Gral. Paz 576, entrepiso. También lo podés seguir de forma virtual.</p>
             </div>
           </details>
 
           <details name="workshop-bot">
             <summary>¿Tiene costo?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
               <p class="bot-msg">No, es totalmente gratuito.</p>
             </div>
           </details>
@@ -1285,13 +1248,8 @@
           <details name="workshop-bot">
             <summary>¿Es para mí si recién empiezo?</summary>
             <div class="bot-row">
-              <span class="bot-avatar" aria-hidden="true"
-                ><i class="bi bi-robot"></i
-              ></span>
-              <p class="bot-msg">
-                ¡Sí! Es para estudiantes, desarrolladores junior, gente de otras
-                áreas con curiosidad y cualquiera que ya use IA para programar.
-              </p>
+              <span class="bot-avatar" aria-hidden="true"><i class="bi bi-robot"></i></span>
+              <p class="bot-msg">¡Sí! Es para estudiantes, desarrolladores junior, gente de otras áreas con curiosidad y cualquiera que ya use IA para programar.</p>
             </div>
           </details>
         </div>
