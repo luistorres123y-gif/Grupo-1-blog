@@ -28,25 +28,24 @@
       integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="components/navbar/navbar.css" />
-    <link rel="stylesheet" href="components/hero/hero.css" />
-    <link rel="stylesheet" href="components/posts/posts.css" />
-    <link rel="stylesheet" href="components/press/press.css" />
-    <link rel="stylesheet" href="components/stats/stats.css" />
-    <link rel="stylesheet" href="components/ecosystem/ecosystem.css" />
-    <link rel="stylesheet" href="components/learning-path/learning-path.css" />
-    <link rel="stylesheet" href="components/sidebar/sidebar.css" />
-    <link rel="stylesheet" href="components/cta/cta.css" />
-    <link rel="stylesheet" href="components/footer/footer.css" />
-    <link rel="stylesheet" href="components/faq-bot/faq-bot.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages/navbar/navbar.css" />
+    <link rel="stylesheet" href="pages/sliderbar/sliderbar.css" />
+    <link rel="stylesheet" href="pages/posts/posts.css" />
+    <link rel="stylesheet" href="pages/notes-prensa/notes.css" />
+    <link rel="stylesheet" href="pages/stats/stats.css" />
+    <link rel="stylesheet" href="pages/ecosystem/ecosystem.css" />
+    <link rel="stylesheet" href="pages/learning-path/learning-path.css" />
+    <link rel="stylesheet" href="pages/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="pages/cta/cta.css" />
+    <link rel="stylesheet" href="pages/footer/footer.css" />
+    <link rel="stylesheet" href="pages/chatbot/chatbot.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <a class="skip-link visually-hidden-focusable" href="#mainContent"
       >Saltar al contenido principal</a
     >
 
-    <!-- COMPONENT: navbar · components/navbar/navbar.html -->
     <header>
       <nav
         class="navbar navbar-expand-lg fixed-top site-navbar"
@@ -119,14 +118,12 @@
         </div>
       </nav>
     </header>
-    <!-- /COMPONENT: navbar -->
 
     <main id="mainContent">
       <h1 class="visually-hidden">
         RollingCode Blog: programación, aprendizaje y tecnología
       </h1>
 
-      <!-- COMPONENT: hero · components/hero/hero.html -->
       <section aria-label="Publicaciones destacadas">
         <div
           id="featuredCarousel"
@@ -267,11 +264,10 @@
           </button>
         </div>
       </section>
-      <!-- /COMPONENT: hero -->
 
       <div class="container py-5">
         <div class="row g-4 g-xl-5">
-          <!-- COMPONENT: posts · components/posts/posts.html -->
+
           <section class="col-12 col-md-8" aria-labelledby="postsTitle">
             <div
               class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4"
@@ -600,12 +596,10 @@
               </article>
             </div>
           </section>
-          <!-- /COMPONENT: posts -->
 
-          <!-- COMPONENT: sidebar · components/sidebar/sidebar.html -->
           <aside class="col-12 col-md-4" aria-label="Barra lateral">
             <div class="d-flex flex-column gap-4">
-              <!-- Search -->
+
               <section class="card-soft p-4">
                 <h2 class="widget-title">
                   <i class="bi bi-search" aria-hidden="true"></i>Buscar
@@ -634,7 +628,6 @@
                 </form>
               </section>
 
-              <!-- Categories -->
               <section class="card-soft p-4">
                 <h2 class="widget-title">
                   <i class="bi bi-tags" aria-hidden="true"></i>Categorías
@@ -674,7 +667,6 @@
                 </div>
               </section>
 
-              <!-- Advertising -->
               <section
                 class="ad-widget d-none d-md-block"
                 aria-label="Publicidad"
@@ -706,11 +698,10 @@
               </section>
             </div>
           </aside>
-          <!-- /COMPONENT: sidebar -->
+
         </div>
       </div>
 
-      <!-- COMPONENT: stats · components/stats/stats.html -->
       <section class="container pb-5" aria-label="RollingCode en números">
         <div class="card-soft stats-band p-4 p-md-5">
           <div class="row gy-4 text-center text-lg-start">
@@ -733,9 +724,7 @@
           </div>
         </div>
       </section>
-      <!-- /COMPONENT: stats -->
 
-      <!-- COMPONENT: ecosystem · components/ecosystem/ecosystem.html -->
       <section class="container pb-5" aria-labelledby="ecosystemTitle">
         <div class="mb-4">
           <span class="section-kicker">Ecosistema RollingCode</span>
@@ -784,9 +773,7 @@
           </div>
         </div>
       </section>
-      <!-- /COMPONENT: ecosystem -->
 
-      <!-- COMPONENT: learning-path · components/learning-path/learning-path.html -->
       <section class="bg-surface py-5" aria-labelledby="learningPathTitle">
         <div class="container">
           <div class="mb-4">
@@ -874,9 +861,7 @@
           </div>
         </div>
       </section>
-      <!-- /COMPONENT: learning-path -->
 
-      <!-- COMPONENT: press · components/press/press.html -->
       <section class="container py-5" aria-labelledby="pressTitle">
         <div class="mb-4">
           <span class="section-kicker">En los medios</span>
@@ -955,9 +940,7 @@
           </div>
         </div>
       </section>
-      <!-- /COMPONENT: press -->
 
-      <!-- COMPONENT: cta · components/cta/cta.html -->
       <section class="container pb-5" aria-labelledby="ctaTitle">
         <div
           class="cta-band p-4 p-md-5 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4"
@@ -978,10 +961,9 @@
           </button>
         </div>
       </section>
-      <!-- /COMPONENT: cta -->
+
     </main>
 
-    <!-- COMPONENT: footer · components/footer/footer.html -->
     <footer class="site-footer mt-auto" data-bs-theme="dark">
       <div class="container pt-5 pb-4">
         <div class="row gy-5">
@@ -1102,9 +1084,7 @@
         </div>
       </div>
     </footer>
-    <!-- /COMPONENT: footer -->
 
-    <!-- COMPONENT: subscription-modal · components/subscription-modal/subscription-modal.html -->
     <div
       class="modal fade"
       id="subscriptionModal"
@@ -1181,9 +1161,7 @@
         </div>
       </div>
     </div>
-    <!-- /COMPONENT: subscription-modal -->
 
-    <!-- COMPONENT: faq-bot · components/faq-bot/faq-bot.html -->
     <details class="faq-bot">
       <summary class="faq-bot-toggle" aria-label="Abrir o cerrar el chat del bot">
         <i class="bi bi-chat-dots-fill faq-bot-icon-open" aria-hidden="true"></i>
@@ -1255,9 +1233,7 @@
         </div>
       </div>
     </details>
-    <!-- /COMPONENT: faq-bot -->
 
-    <!-- Bootstrap scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
