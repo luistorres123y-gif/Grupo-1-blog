@@ -5,43 +5,33 @@
     }
 
 :root {
-  /* Marca */
   --rojo: #e0202a;
   --rojo-oscuro: #a50d14;
   --rojo-profundo: #6e070c;
-  --rojo-suave: #ffe9ea;        /* texto sobre fondo rojo */
+  --rojo-suave: #ffe9ea;
 
-  /* Fondos y superficies */
-  --negro: #0b0b0c;             /* fondo de la página */
-  --superficie: #111113;        /* tarjetas */
-  --superficie-2: #16161a;      /* formularios y tarjetas elevadas */
-  --chip: #26262a;              /* chips y fondos de barras */
+  --negro: #0b0b0c;
+  --superficie: #111113;
+  --superficie-2: #16161a;
+  --chip: #26262a;
 
-  /* Bordes */
   --borde: #2c2c31;
   --borde-fuerte: #3a3a40;
 
-  /* Texto */
   --texto: #d4d4d8;
   --texto-suave: #a1a1aa;
   --blanco: #ffffff;
 
-  /* Niveles de sponsors */
   --diamante: #e0202a;
   --oro: #e8b84a;
   --bronce: #e8913a;
 
-  /* Estados */
   --error: #ff6b73;
   --boton-sponsor: #e5444f;
 
-  /* Degradado del hero y el banner Early Bird */
   --degradado-rojo: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
 }
 
-/* ==========================================================================
-   COMPONENT: NAVBAR
-   ========================================================================== */
 .site-navbar {
   --bs-navbar-color: var(--color-text-primary);
   --bs-navbar-hover-color: var(--color-white);
@@ -52,13 +42,11 @@
   background-color: var(--color-background);
 }
 
-/* --- Logo --- */
 .navbar-logo {
   width: auto;
   height: 38px;
 }
 
-/* --- Menu links --- */
 .site-navbar .nav-link {
   font-weight: 500;
   border-radius: 50rem;
@@ -79,7 +67,6 @@
   color: var(--color-primary);
 }
 
-/* --- Navbar on phones and tablets --- */
 @media (max-width: 991.98px) {
   .site-navbar .navbar-collapse {
     max-height: calc(100vh - var(--navbar-height));

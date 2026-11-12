@@ -11,7 +11,6 @@
   border-radius: var(--border-radius-lg);
 }
 
-/* --- Article content --- */
 .article-content {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -51,7 +50,6 @@
   text-align: center;
 }
 
-/* --- Tip box --- */
 .tip-box {
   display: flex;
   gap: 1rem;
@@ -67,7 +65,6 @@
   color: var(--color-primary);
 }
 
-/* --- Tags and share links --- */
 .article-tags .badge {
   background-color: var(--color-chip);
   color: var(--color-heading);

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía para empezar a programar desde cero: qué aprender primero, en qué orden y cómo practicar con proyectos.">
+  <title>¿Por dónde empezar a programar? Guía para tus primeros pasos | RollingCode Blog</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages/navbar/navbar.css">
+  <link rel="stylesheet" href="pages/article/article.css">
+  <link rel="stylesheet" href="pages/footer/footer.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="skip-link visually-hidden-focusable" href="#mainContent">Saltar al contenido principal</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar" data-bs-theme="dark" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/icons/logo-rollingcode-blog.png" class="navbar-logo" alt="RollingCode Blog" width="175" height="38">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1" aria-hidden="true"></i>Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1" aria-hidden="true"></i>Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-people me-1" aria-hidden="true"></i>Acerca de nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1" aria-hidden="true"></i>Contacto</a></li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row gap-2">
+            <a class="btn btn-outline-light" href="login.html"><i class="bi bi-person-circle me-1" aria-hidden="true"></i>Login</a>
+            <button type="button" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#subscriptionModal"><i class="bi bi-bell me-1" aria-hidden="true"></i>Suscribirse</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <article class="container py-5" aria-labelledby="articleTitle">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb small">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="categoria-primeros-pasos.html">Primeros pasos</a></li>
+              <li class="breadcrumb-item active" aria-current="page">¿Por dónde empezar a programar?</li>
+            </ol>
+          </nav>
+
+          <header class="mb-4">
+            <a href="categoria-primeros-pasos.html" class="badge badge-diamond text-decoration-none mb-3">Primeros pasos</a>
+            <h1 id="articleTitle" class="article-title mb-3">¿Por dónde empezar a programar? Guía para tus primeros pasos</h1>
+            <p class="lead text-body-secondary">Aprender a programar desde cero es posible. Te contamos qué aprender primero, en qué orden y cómo practicar para llegar a tu primer proyecto publicado.</p>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <div class="me-auto">
+                <p class="mb-0 small text-body-secondary">
+                  <i class="bi bi-calendar3 me-1" aria-hidden="true"></i><time datetime="2026-11-02">2 de noviembre de 2026</time>
+                  <span class="mx-2" aria-hidden="true">·</span><i class="bi bi-clock me-1" aria-hidden="true"></i>9 min de lectura
+                </p>
+              </div>
+              <span class="small text-body-secondary"><i class="bi bi-folder2-open me-1" aria-hidden="true"></i>Categoría: <strong>Primeros pasos</strong></span>
+            </div>
+          </header>
+
+          <figure class="article-cover mb-5">
+            <img src="assets/img/posts/post-getting-started.jpg" alt="Estudiante pensativa frente a su notebook con código, de noche en su escritorio" width="1358" height="758">
+            <figcaption>Sentirse perdido al principio es normal: con orden y práctica, el código empieza a tener sentido.</figcaption>
+          </figure>
+
+          <div class="article-content">
+            <p>Todos los días usamos software: para estudiar, trabajar, comprar o hablar con amigos. Detrás de cada aplicación hay personas que un día escribieron su primera línea de código sin saber demasiado. <strong>Programar no es un talento especial: es una habilidad que se aprende</strong> con práctica, constancia y un buen orden.</p>
+            <p>Si estás pensando en dar el primer paso, esta guía te ayuda a ordenar el camino para que no te pierdas entre cientos de tutoriales.</p>
+
+            <h2>1. Definí qué querés construir</h2>
+            <p>Antes de elegir un lenguaje, pensá qué te gustaría crear: una página web, una aplicación, un sistema para un negocio. Para la mayoría de las personas que recién empiezan, <strong>el desarrollo web es la puerta de entrada ideal</strong>: los resultados se ven enseguida en el navegador y solo necesitás una computadora.</p>
+
+            <h2>2. La base: HTML y CSS</h2>
+            <h3>HTML: la estructura</h3>
+            <p>HTML define qué hay en una página: títulos, párrafos, imágenes, enlaces y formularios. Aprender a usar etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> o <code>&lt;footer&gt;</code> hace que tu código sea más ordenado y accesible.</p>
+            <h3>CSS: el diseño</h3>
+            <p>CSS se encarga de cómo se ve todo: colores, tipografías, espacios y distribución. Un consejo práctico es definir tus colores en variables dentro de <code>:root</code>, así podés cambiar la identidad de todo un sitio desde un solo lugar.</p>
+
+            <div class="tip-box my-4">
+              <i class="bi bi-lightbulb" aria-hidden="true"></i>
+              <div>
+                <p class="fw-semibold mb-1">Consejo de RollingCode Blog</p>
+                <p class="mb-0">No intentes memorizar todo. Tené a mano la documentación y aprendé cada etiqueta o propiedad cuando la necesites en un proyecto real.</p>
+              </div>
+            </div>
+
+            <h2>3. Bootstrap y el diseño responsive</h2>
+            <p>Hoy la mayoría de las visitas a un sitio llegan desde el celular. Bootstrap te da una grilla de 12 columnas y componentes listos (navbar, carrusel, modales, formularios) para que tus páginas se adapten a cualquier pantalla.</p>
+
+            <figure class="my-4">
+              <img src="assets/img/article/article-responsive.jpg" class="img-fluid w-100" alt="El mismo sitio adaptado a una computadora, una tablet y un celular" width="900" height="560" loading="lazy">
+              <figcaption>Un diseño responsive reorganiza el contenido según el tamaño de la pantalla.</figcaption>
+            </figure>
+
+            <h2>4. JavaScript y Git</h2>
+            <p>Con JavaScript tus páginas cobran vida: responden a lo que hace el usuario y muestran información de forma dinámica. En paralelo, conviene aprender <strong>Git y GitHub</strong> para guardar versiones de tu código, trabajar en equipo y tener tus proyectos visibles para cualquier persona que quiera conocer tu trabajo.</p>
+
+            <figure class="my-4">
+              <blockquote class="article-quote mb-2">
+                "Programar es un oficio que une el arte y la creatividad."
+              </blockquote>
+              <figcaption>Idea destacada en una nota de prensa por el Día del Programador.</figcaption>
+            </figure>
+
+            <h2>5. Ruta sugerida</h2>
+            <p>Este es un orden posible para avanzar, con un proyecto de práctica en cada etapa:</p>
+            <div class="table-responsive mb-4">
+              <table class="table table-striped align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">Etapa</th>
+                    <th scope="col">Qué aprendés</th>
+                    <th scope="col">Proyecto de práctica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>HTML y CSS</td><td>Tu CV en una página web</td></tr>
+                  <tr><td>2</td><td>Bootstrap</td><td>Un blog responsive como este</td></tr>
+                  <tr><td>3</td><td>JavaScript</td><td>Una lista de tareas</td></tr>
+                  <tr><td>4</td><td>Git y GitHub</td><td>Publicar tus proyectos</td></tr>
+                  <tr><td>5</td><td>Back-end y bases de datos</td><td>Una API propia</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>6. Aprender acompañado</h2>
+            <p>Aprender solo es posible, pero hacerlo en comunidad acelera todo: tenés a quién preguntarle, compartís dudas y te mantenés constante. En <strong>RollingCode School</strong>, la academia del ecosistema RollingCode, ya son <strong>más de 6.200 egresados</strong> los que empezaron este camino. Sus pilares lo resumen bien: pasión, calidez, compañerismo y profesionalismo.</p>
+
+            <figure class="my-4">
+              <img src="assets/img/article/article-community.jpg" class="img-fluid w-100" alt="Tres personas conversando sobre programación" width="900" height="560" loading="lazy">
+              <figcaption>Compartir dudas con otras personas que están aprendiendo hace que el camino sea más llevadero.</figcaption>
+            </figure>
+
+            <h2>Qué necesitás para empezar hoy</h2>
+            <ul>
+              <li>Una computadora con conexión a internet.</li>
+              <li>Un editor de código, como Visual Studio Code.</li>
+              <li>Un navegador actualizado para probar tus páginas.</li>
+              <li>Una cuenta en GitHub para guardar tus proyectos.</li>
+            </ul>
+            <p>El mejor momento para empezar es ahora. Elegí un proyecto chico, terminalo y publicalo: cada línea que escribas te acerca un poco más a tu objetivo.</p>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 border-top border-bottom py-4 my-5">
+            <div class="article-tags d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill px-3 py-2">#HTML</span>
+              <span class="badge rounded-pill px-3 py-2">#CSS</span>
+              <span class="badge rounded-pill px-3 py-2">#Bootstrap</span>
+              <span class="badge rounded-pill px-3 py-2">#PrimerosPasos</span>
+            </div>
+            <div class="share-links d-flex align-items-center gap-2">
+              <span class="small text-body-secondary me-1">Compartir:</span>
+              <a href="https://www.facebook.com/RollingCodeSchool/" target="_blank" rel="noopener" aria-label="Facebook de Rolling Code School (se abre en una pestaña nueva)"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a href="https://x.com/intent/post?text=%C2%BFPor%20d%C3%B3nde%20empezar%20a%20programar%3F%20Gu%C3%ADa%20para%20tus%20primeros%20pasos%20%7C%20RollingCode%20Blog" target="_blank" rel="noopener" aria-label="Compartir en X (se abre en una pestaña nueva)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+              <a href="https://wa.me/?text=%C2%BFPor%20d%C3%B3nde%20empezar%20a%20programar%3F%20Gu%C3%ADa%20para%20tus%20primeros%20pasos%20%7C%20RollingCode%20Blog" target="_blank" rel="noopener" aria-label="Compartir por WhatsApp (se abre en una pestaña nueva)"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="bg-surface py-5" aria-labelledby="commentsTitle">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h2 id="commentsTitle" class="section-title mb-4">Comentarios</h2>
+
+            <form class="card-soft p-4 p-md-5" action="404.html" method="get">
+              <h3 class="h5 mb-1">Dejá tu comentario</h3>
+              <p class="small text-body-secondary mb-4">Tu correo no se publicará. Los campos marcados con * son obligatorios.</p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="commentName" class="form-label">Nombre *</label>
+                  <input type="text" class="form-control" id="commentName" name="name" autocomplete="name" minlength="2" required>
+                  <div class="invalid-feedback">Ingresá tu nombre.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="commentEmail" class="form-label">Correo electrónico *</label>
+                  <input type="email" class="form-control" id="commentEmail" name="email" autocomplete="email" required>
+                  <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+                </div>
+                <div class="col-12">
+                  <label for="commentText" class="form-label">Comentario *</label>
+                  <textarea class="form-control" id="commentText" name="comment" rows="4" minlength="10" required></textarea>
+                  <div class="invalid-feedback">Escribí un comentario de al menos 10 caracteres.</div>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary"><i class="bi bi-chat-dots me-1" aria-hidden="true"></i>Publicar comentario</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="relatedTitle">
+      <h2 id="relatedTitle" class="section-title mb-4">También te puede interesar</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom"><img src="assets/img/posts/post-html.jpg" class="card-img-top" alt="Código HTML con las etiquetas doctype, html, head, meta, body, header y nav" width="1600" height="1000" loading="lazy"></div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Front-end</p>
+              <h3 class="h5"><a href="post-semantic-html.html" class="stretched-link text-reset text-decoration-none">HTML semántico: las etiquetas que todo sitio necesita</a></h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom"><img src="assets/img/posts/post-git.jpg" class="card-img-top" alt="Logo de Git conectado a un gráfico de ramas con commits" width="987" height="617" loading="lazy"></div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Herramientas</p>
+              <h3 class="h5"><a href="post-git-github.html" class="stretched-link text-reset text-decoration-none">Git y GitHub sin miedo: los comandos del día a día</a></h3>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card card-soft h-100 overflow-hidden hover-lift">
+            <div class="img-zoom"><img src="assets/img/posts/post-portfolio.jpg" class="card-img-top" alt="Notebook mostrando un portfolio web de developer en un escritorio con luz violeta" width="1400" height="875" loading="lazy"></div>
+            <div class="card-body">
+              <p class="small text-body-secondary mb-1">Primeros pasos</p>
+              <h3 class="h5"><a href="post-portfolio.html" class="stretched-link text-reset text-decoration-none">Tu primer portfolio de developer: qué mostrar y cómo</a></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer mt-auto" data-bs-theme="dark">
+    <div class="container pt-5 pb-4">
+      <div class="row gy-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/icons/logo-rollingcode-blog.png" class="footer-logo" alt="RollingCode Blog" width="230" height="50">
+          </a>
+          <p class="mb-0 pe-lg-4">Artículos, guías y novedades sobre programación, aprendizaje y el ecosistema RollingCode: School, AI Studio y Labs.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h2 class="footer-title">Seguinos en redes</h2>
+          <p>Seguí a Rolling Code en sus redes oficiales.</p>
+          <ul class="list-inline social-links mb-0">
+            <li class="list-inline-item"><a href="https://www.instagram.com/rollingcodeschool/" target="_blank" rel="noopener" aria-label="Instagram de Rolling Code School (se abre en una pestaña nueva)"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/RollingCodeSchool/" target="_blank" rel="noopener" aria-label="Facebook de Rolling Code School (se abre en una pestaña nueva)"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="https://x.com/rollingcodeok" target="_blank" rel="noopener" aria-label="X de Rolling Code (se abre en una pestaña nueva)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="row gy-4">
+            <div class="col-12 col-sm-5">
+              <h2 class="footer-title">Enlaces útiles</h2>
+              <ul class="list-unstyled footer-links mb-0">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="https://rollingcode.co" target="_blank" rel="noopener">rollingcode.co<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+                <li><a href="404.html">Política de privacidad</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-7">
+              <h2 class="footer-title">Contacto</h2>
+              <ul class="list-unstyled footer-contact mb-0">
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Gral. Paz 576, Piso 9, Oficina 2, San Miguel de Tucumán, Argentina</span></li>
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Bartolomé Mitre 480, Piso 12, Ciudad Autónoma de Buenos Aires, Argentina</span></li>
+                <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+5493815783030">+549&#8209;381&#8209;5783030</a></li>
+                <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:academy@rollingcodeschool.com">academy@rollingcodeschool.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 py-3 small">
+        <p class="mb-0">&copy; 2026 RollingCode Blog. Proyecto académico — Rolling Code School.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalTitle">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 overflow-hidden">
+        <div class="modal-header modal-header-brand" data-bs-theme="dark">
+          <h2 class="modal-title fs-5" id="subscriptionModalTitle"><i class="bi bi-envelope-paper-heart me-2" aria-hidden="true"></i>Suscribite a RollingCode Blog</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <form action="404.html" method="get">
+          <div class="modal-body p-4">
+            <p class="text-body-secondary">Recibí en tu correo cada nueva guía de programación y las novedades del ecosistema RollingCode. Sin spam, prometido.</p>
+            <div class="mb-3">
+              <label for="subscriptionName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="subscriptionName" name="name" placeholder="Tu nombre" autocomplete="name" minlength="2" required>
+              <div class="invalid-feedback">Ingresá tu nombre (mínimo 2 caracteres).</div>
+            </div>
+            <div class="mb-3">
+              <label for="subscriptionEmail" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="subscriptionEmail" name="email" placeholder="nombre@correo.com" autocomplete="email" required>
+              <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+            </div>
+          </div>
+          <div class="modal-footer border-0 px-4 pb-4 pt-0">
+            <button type="button" class="btn btn-outline-theme" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary"><i class="bi bi-send me-1" aria-hidden="true"></i>Suscribirme</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
